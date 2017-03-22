@@ -4,7 +4,7 @@
   */
 object MainApp {
   def main(args: Array[String]): Unit = {
-    val myBiTree = BiTree[Int](EmptyBiTree,BiTree(EmptyBiTree,EmptyBiTree,45),75)
+    val myBiTree = BiTree[Int](BiTree(),BiTree(BiTree(),BiTree(),45),75)
     myBiTree.traverseTreeInOrder(x=>print(s"${x} "))
   }
 
